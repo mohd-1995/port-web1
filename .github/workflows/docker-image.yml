@@ -19,7 +19,7 @@ jobs:
       uses: docker/login-action@v1
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSOWRD }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
       run: docker build -t mohd1995/ec2-webhost .
