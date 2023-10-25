@@ -22,7 +22,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t mohd1995/ec2-webhost .
+      run: docker build -t mohd1995/ec2-web .
 
     - name: Push Docker image to Docker Hub
-      run: docker push mohd1995.ec2-webhost:latest
+      run: docker push mohd1995.ec2-web:latest
