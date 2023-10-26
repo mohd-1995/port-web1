@@ -1,33 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Your Name - Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moe's Personal Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+  <!-- box icons links -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!-- remix icons link -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lato:ital@0;1&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>.4</h2>
-        <p>Your introduction and brief bio go here.</p>
-    </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <!-- Your portfolio items go here -->
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Contact information and a contact form go here.</p>
-    </section>
+  <!-- header -->
+  <header>
+    <a href="#" class="logo">Developer<span>X.</span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navlist">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="top-btnn">
+      <a href="#" class="h-btn">Contact Me</a>
+    </div>
+  </header>
+  <!-- hero section -->
+  <section class="hero" id="home">
+    <div class="main-content" data-aos="fade-in">
+      <h4>Hi, There!</h4>
+      <h1>I'm <span>Mohammed Balouch</span></h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Maiores inventore obcaecati fuga nulla, odio consequatur! 
+        Perferendis unde vel iusto, quaerat, eius suscipit nesciunt 
+        molestiae odio reiciendis excepturi ratione maxime id.</p>
+      <div class="social">
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-linkedin-fill"></i></a>
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-youtube-fill"></i></a>
+      </div>
+
+      <div class="main-btn">
+        <a href="#" class="btn">Hire Me</a>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+    </div>   
+  </section>
+
+  <!-- about me -->
+  <section class="about-img" id="about">
+    <div class="about-img" data-aos="zoom-in-down">
+      <img src="img/about.jpg" alt="About Me">
+    </div>
+    <div class="about-text" data-aos="zoom-in-up">
+      <h2>I am Product<span>Designer</span> <br> & Web Developer</h2>
+      <div class="exp-area">
+        <p class="exp">
+          Specialty
+          <span>12 Years</span>
+        </p>
+
+        <p class="exp">
+          Email
+          <span>mohd_liverpool1@hotmail.co.uk</span>
+        </p>
+
+        <p class="exp">
+          Number
+          <span>07348123564</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- services -->
+  <section class="services" id="services">
+    <div class="center-text" data-aos="fade-in-up">
+      <h2>My <span>Services</span></h2>
+    </div>
+    <div class="services-content">
+      <div class="box">
+        <img src="img/s-1.svg" alt="Service 1">
+        <h3>Junior Devops</h3>
+        <p>Fringilla dapibus platean interdun justoutan elentum lectus tellus midign issimer motana egestas imperdiet solution.</p>
+        <a href="#">
+          Download Now
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+
+      <div class="box">
+        <img src="img/s-2.svg" alt="Service 2">
+        <h3>Junior Devops</h3>
+        <p>Fringilla dapibus platean interdun justoutan elentum lectus tellus midign issimer motana egestas imperdiet solution.</p>
+        <a href="#">
+          Download Now
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+
+      <div class "box">
+        <img src="img/s-3.svg" alt="Service 3">
+        <h3>Junior Devops</h3>
+        <p>Fringilla dapibus platean interdun justoutan elentum lectus tellus midign issimer motana egestas imperdiet solution.</p>
+        <a href="#">
+          Download Now
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+    </div>
+  </section>  
+
+  <section class="portfolio" id="portfolio" data-aos="zoom-in-up">
+    <div class="center-text">
+      <h2>My <span>Portfolio</span></h2>
+    </div>
+
+    <div class="Portfolio-center">
+      <div class="row">
+        <img src="img/port-1.jpg" alt="Portfolio Image">
+        <div class="row-text">
+          <h5>Website Design</h5>
+        </div>
+        <div class="row-icon">
+          <i class="ri-github-fill"></i>
+        </div>
+      </div>
+      <h4>DevOPS Projects</h4>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="center-text" data-aos="zoom-in-up">
+      <h2>Contact <span>Me</span></h2>
+    </div>
+
+    <div class="contact-form">
+      <form action="">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here.." required></textarea>
+        <input type="submit" name="" value="Send Message" class="send-btn">
+      </form>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="copyright">
+      <p>&copy; 2023 Mohammed Balouch, All rights reserved.</p>
+    </div>
+    <a href="#home" class="scroll-top">
+      <i class="ri-arrow-up-s-fill"></i>
+    </a>
+  </div>
 </body>
 </html>
